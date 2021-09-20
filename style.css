@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 
-::selection {
-  color: none;
-  background: none;
-}
-
-::-moz-selection {
-  color: none;
-  background: none;
-}
-
 body {
   background-color: #070a0e;
   color: #fff;
@@ -165,39 +155,14 @@ footer a:visited {
   color: white;
 }
 
-.mobile-input {
-  visibility: hidden;
-  background-color: #070a0e;
-  color: #00000000;
-}
-
 @media screen and (max-width: 1024px) {
   .instructions::after {
-    content: ' (keyboard input required)';
-  }
-
-  .word {
-    bottom: auto;
-  }
-
-  .mobile-input {
-    visibility: visible;
+    content: ' (keyboard required)';
   }
 
   footer a {
     font-size: 0.8rem;
     bottom: auto;
     top: 0;
-  }
-}
-@media screen and (max-width: 599px) {
-  .notification-container {
-    background-color: rgba(0, 0, 0);
-    z-index: 100;
-    bottom: -400px;
-  }
-
-  .notification-container.show {
-    transform: translateY(-480px);
   }
 }
