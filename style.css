@@ -160,6 +160,10 @@ footer a:visited {
     content: ' (keyboard required)';
   }
 
+  .notification-container {
+    visibility: hidden;
+  }
+
   footer a {
     font-size: 0.8rem;
     bottom: auto;
